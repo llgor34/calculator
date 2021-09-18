@@ -57,11 +57,6 @@ class Calculator {
         // if there is any dot, and user want to add another dot, then return
         if (currentOperator.includes(".") && operand === ".") return
 
-
-        // return if previous and current operand are the same just return
-        if(this.currentOperand == this.previousOperand) return;
-
-
         //Check if previous char in expression was a operand, if so, return
         if(this.isOperand(this.lastChar)) return;
 
